@@ -1,35 +1,42 @@
-# code-logger README
+# Log Selected Text with Console.log Extension
 
-This is the README for your extension "code-logger". After writing up a brief description, we recommend including the following sections.
+## Description
+The "Log Selected Text with Console.log" extension for Visual Studio Code allows you to quickly log selected text using `console.log` statements. This extension simplifies the process of adding temporary logging statements for debugging purposes, making it easier to understand the flow of your code.
 
 ## Features
+- Select any text in the editor and trigger the command to insert a `console.log(selectedText);` statement on the next line.
+- Works in various programming languages supported by Visual Studio Code, such as JavaScript, TypeScript, Python, etc.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
+1. Launch Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for "Log Selected Text with Console.log" in the Extensions view search box.
+4. Click on the Install button to install the extension.
+5. Reload Visual Studio Code to activate the extension.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
+1. Open a file containing the code you want to log.
+2. Select the text you want to log.
+3. Use the predefined keybinding (e.g., Ctrl+Alt+l or Cmd+Alt+l on macOS) or right-click and select the "Log Selected Value" command from the context menu.
+4. A new line with `console.log(selectedText);` will be inserted below the selected text.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Contributing
+Contributions are welcome! If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request on the [GitHub repository](https://github.com/siva-geddada/code-logger).
 
-## Requirements
+## License
+This extension is licensed under the [MIT License](LICENSE).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
+## Contact
+If you have any questions or feedback, you can reach me at [Siva-Geddada](siva.cs579@gmail.com)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Enjoy the extension! Happy coding!
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+--
 
 ## Release Notes
 
@@ -45,7 +52,7 @@ Fixed issue #.
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+Added features -.
 
 ---
 
@@ -54,14 +61,6 @@ Added features X, Y, and Z.
 Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
 ## For more information
 
