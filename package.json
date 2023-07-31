@@ -2,6 +2,7 @@
   "name": "code-logger",
   "displayName": "console.log",
   "publisher": "Siva-Geddada",
+  "repository": "https://github.com/siva-geddada/code-logger",
   "description": "\"Log Selected Text with Console.log\":",
   "version": "0.0.1",
   "engines": {

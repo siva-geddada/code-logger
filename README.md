@@ -1,6 +1,6 @@
 # Log Selected Text with Console.log Extension
-
 ## Description
+Use the predefined keybinding (e.g., Ctrl+l or Cmd+l on macOS) or right-click and select
 The "Log Selected Text with Console.log" extension for Visual Studio Code allows you to quickly log selected text using `console.log` statements. This extension simplifies the process of adding temporary logging statements for debugging purposes, making it easier to understand the flow of your code.
 
 ## Features
@@ -18,7 +18,7 @@ The "Log Selected Text with Console.log" extension for Visual Studio Code allows
 ## Usage
 1. Open a file containing the code you want to log.
 2. Select the text you want to log.
-3. Use the predefined keybinding (e.g., Ctrl+Alt+l or Cmd+Alt+l on macOS) or right-click and select the "Log Selected Value" command from the context menu.
+3. Use the predefined keybinding (e.g., Ctrl+l or Cmd+l on macOS) or right-click and select the "Log Selected Value" command from the context menu.
 4. A new line with `console.log(selectedText);` will be inserted below the selected text.
 
 ## Contributing
