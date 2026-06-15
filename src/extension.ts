@@ -20,10 +20,24 @@ export function activate(context: vscode.ExtensionContext) {
             
             const logStatement = `${leadingWhitespace}console.log('${customText}${selectedText} --->', ${selectedText});\n`;
             
-            // Insert the log statement on the next line with proper indentation
+            // Find the end of the statement (look for semicolon)
+            let insertLine = currentPosition.line;
+            let insertColumn = 0;
+            
+            for (let i = currentPosition.line; i < editor.document.lineCount; i++) {
+              const line = editor.document.lineAt(i);
+              const semicolonIndex = line.text.indexOf(';');
+              if (semicolonIndex !== -1) {
+                insertLine = i;
+                insertColumn = line.text.length; // Insert at end of line with semicolon
+                break;
+              }
+            }
+            
+            // Insert the log statement after the statement ends
             editBuilder.insert(
-              currentPosition.with(currentPosition.line + 1, 0),
-              logStatement
+              new vscode.Position(insertLine, insertColumn),
+              `\n${logStatement}`
             );
           });
         }

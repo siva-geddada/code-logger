@@ -4,7 +4,8 @@
   "publisher": "Siva-Geddada",
   "repository": "https://github.com/siva-geddada/code-logger",
   "description": "\"Log Selected Text with Console.log\":",
-  "version": "0.0.3",
+  "icon": "consolelog.png",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.80.0"
   },
