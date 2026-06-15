@@ -13,7 +13,14 @@ export function activate(context: vscode.ExtensionContext) {
 
           editor.edit((editBuilder) => {
             const currentPosition = editor.selection.active;
-            const logStatement = `console.log('${customText}${selectedText} --->', ${selectedText});\n`;
+            const currentLine = editor.document.lineAt(currentPosition.line);
+            
+            // Get the indentation of the current line
+            const leadingWhitespace = /^\s*/.exec(currentLine.text)?.[0] || '';
+            
+            const logStatement = `${leadingWhitespace}console.log('${customText}${selectedText} --->', ${selectedText});\n`;
+            
+            // Insert the log statement on the next line with proper indentation
             editBuilder.insert(
               currentPosition.with(currentPosition.line + 1, 0),
               logStatement
